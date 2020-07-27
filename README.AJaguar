@@ -1,0 +1,20 @@
+The SDL port to the Atari Jaguar
+
+todo:
+add console specific features and optimizations
+gamepad support
+mouse/keyboard emulation support
+audio support
+CD support
+
+to build the library with Makefile.ajaguar:
+make -f Makefile.ajaguar
+
+to build the tests with Makefile.ajaguar
+make -f Makefile.ajaguar test
+
+using the libraries, and/or the tests, require additional works specific to the platform
+
+Improvements and fixes are welcome.
+Jean-Paul Mari
+djipi.mari@gmail.com

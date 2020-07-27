@@ -1,0 +1,17 @@
+.vs/
+AJaguar/
+Debug/
+test/AJaguar/
+VS2015/
+VS2017/.vs/
+VS2017/Backup/
+VS2017/SDL/Win32/
+VS2017/SDL/x64/
+VS2017/SDL/*.user
+VS2017/SDLmain/Win32/
+VS2017/SDLmain/x64/
+VS2017/SDLmain/*.user
+VS2017/Win32/
+VS2017/x64/
+*.o
+*.a
