@@ -7,13 +7,17 @@ mouse/keyboard emulation support
 audio support
 CD support
 
-to build the library with Makefile.ajaguar:
+to check:
+SDL_main support
+
+to build the SDL and SDL_main libraries with Makefile.ajaguar:
 make -f Makefile.ajaguar
+make -f Makefile.ajaguar SDL_main
 
 to build the tests with Makefile.ajaguar
 make -f Makefile.ajaguar test
 
-using the libraries, and/or the tests, require additional works specific to the platform
+using the libraries, and the tests, require additional works specific to the platform
 
 Improvements and fixes are welcome.
 Jean-Paul Mari

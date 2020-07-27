@@ -37,7 +37,6 @@ SRCS = \
 	src/joystick/ajaguar/SDL_sysjoystick.c \
 	src/joystick/SDL_joystick.c \
 	src/loadso/ajaguar/SDL_sysloadso.c \
-	src/main/ajaguar/SDL_ajaguar_main.c \
 	src/SDL.c \
 	src/SDL_error.c \
 	src/SDL_fatal.c \
@@ -109,8 +108,12 @@ $(TARGET): copy_config \
 test: copy_config \
 	$(TEST)
 
+SDL_main: copy_config \
+	src/main/ajaguar/SDL_ajaguar_main.o
+	$(AR) rcs libSDL_main.a src/main/ajaguar/SDL_ajaguar_main.o
+
 copy_config:
 	@cp include/SDL_config.h.default include/SDL_config.h
 
 clean:
-	rm -f include/SDL_config.h $(OBJS) $(TEST)
+	rm -f include/SDL_config.h $(OBJS) $(TEST) src/main/ajaguar/SDL_ajaguar_main.o
